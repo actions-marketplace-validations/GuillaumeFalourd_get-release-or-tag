@@ -21,7 +21,7 @@ runs:
           fi
 
           echo "tag=$tag" >> $GITHUB_OUTPUT
-      shell: bash
+       shell: bash
       
 branding:
   icon: at-sign
