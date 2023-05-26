@@ -15,7 +15,7 @@ runs:
        run: |
           tag="${{github.sha}}"
 
-          if [ "${{github.event.name}}" == "release" ]; then
+          if [ "${{github.event_name}}" == "release" ]; then
             ref="${{github.ref}}"
             tag=$(echo ${{github.ref}} | sed 's/refs\/tags\///g')
           fi
