@@ -13,8 +13,8 @@ steps:
    - id: tag
      uses: GuillaumeFalourd/get-release-or-tag@v1
 
-   - name: Build
-     run: echo "tag: ${{ steps.tag.outputs.tag }}"
+   - name: TAG
+     run: echo "TAG ${{ steps.tag.outputs.tag }}"
 ```
 
 ### With Docker images
