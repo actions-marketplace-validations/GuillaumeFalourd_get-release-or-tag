@@ -2,7 +2,7 @@
 
 [![Action test on Ubuntu](https://github.com/GuillaumeFalourd/get-release-or-tag/actions/workflows/ubuntu_action_test.yml/badge.svg)](https://github.com/GuillaumeFalourd/get-release-or-tag/actions/workflows/ubuntu_action_test.yml)
 
-Github action to get release name and tag.
+Github action to get a release or tag.
 
 **Supported runners**: `ubuntu-latest`
 
@@ -21,9 +21,8 @@ steps:
 
 ### With Docker images
 
-This action can for example helps you get release docker images in a dev/prod pipeline. It will return the release name (`$GITHUB_REF` without `refs/tags/`) if the action is `release` otherwise it will return `$GITHUB_SHA`
-
-Ex:
+This action can for example helps you get release docker images in a dev/prod pipeline. 
+It will return the release name (`$GITHUB_REF` without `refs/tags/`) if the action is `release` otherwise it will return `$GITHUB_SHA`
 
 ```
 name: Publish
