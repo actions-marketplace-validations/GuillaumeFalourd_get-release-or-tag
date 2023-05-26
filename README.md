@@ -1,5 +1,7 @@
 # Get release name or tag
 
+[![Action test on Ubuntu](https://github.com/GuillaumeFalourd/get-release-or-tag/actions/workflows/ubuntu_action_test.yml/badge.svg)](https://github.com/GuillaumeFalourd/get-release-or-tag/actions/workflows/ubuntu_action_test.yml)
+
 Github action to get release name and tag.
 
 **Supported runners**: `ubuntu-latest`
