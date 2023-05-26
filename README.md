@@ -14,8 +14,10 @@ Github action to get a release or tag.
 
 ```
 steps:
+   - uses: actions/checkout@v3
+
    - id: tag
-     uses: GuillaumeFalourd/get-release-or-tag@v1
+     uses: GuillaumeFalourd/get-release-or-tag@v2
 
    - name: TAG
      run: echo "TAG ${{ steps.tag.outputs.tag }}"
@@ -39,9 +41,9 @@ jobs:
     name: Flyway
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
-      - uses: GuillaumeFalourd/get-release-or-tag@v1
+      - uses: GuillaumeFalourd/get-release-or-tag@v2
         id: tag
 
       - name: Build
