@@ -1,12 +1,32 @@
 name: 'Get release tag or SHA'
-description: 'Gets the release name if it exists otherwise returns the commit id'
+
+description: 'Gets the release tag if it exists, otherwise returns the commit id'
+
 author: Guillaume Falourd
-branding:
-  icon: at-sign
-  color: blue
+
 outputs:
   tag:
     description: 'The release tag or commit'
+    value: ${{ steps.tag.outputs.tag }}
+
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: "composite"
+  steps:
+     - name: Extract Tag
+       id: tag
+       run: |
+         # Default GITHUB_SHA
+        tag="${GITHUB_SHA}"
+
+        # If release parse the tag name from GITHUB_REF
+        if [ "${GITHUB_EVENT_NAME}" == "release" ]; then
+          ref="${GITHUB_REF}"
+          tag=$(echo $GITHUB_REF | sed 's/refs\/tags\///g')
+        fi
+
+        echo "tag=$tag" >> $GITHUB_OUTPUT
+      shell: bash
+      
+branding:
+  icon: at-sign
+  color: blue
