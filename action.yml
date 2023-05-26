@@ -2,8 +2,6 @@ name: 'Get release tag or SHA'
 
 description: 'Gets the release tag if it exists, otherwise returns the commit id'
 
-author: Guillaume Falourd
-
 outputs:
   tag:
     description: 'The release tag or commit'
