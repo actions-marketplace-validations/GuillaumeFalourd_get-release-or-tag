@@ -9,7 +9,6 @@ on:
 jobs:
   macos-minimal:
     runs-on: macos-latest
-    if: github.event_name != 'push'
     steps:
       - uses: actions/checkout@v3
       - id: tag
