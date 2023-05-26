@@ -20,7 +20,7 @@ When creating issues, please explain:
 
 - Fork the project repository.
 
-- **Always** base your work on the project's `main` branch.
+- **Always** base your work on the project's `master` branch.
 
 - Test your implementation for each OS runner with GHA workflows on your fork.
 
