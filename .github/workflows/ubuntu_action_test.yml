@@ -13,6 +13,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - id: tag
-        uses: GuillaumeFalourd/get-release-or-tag@master
+        uses: GuillaumeFalourd/get-release-or-tag@main
       - name: tag
         run: echo "TAG ${{ steps.tag.outputs.tag }}"
