@@ -7,11 +7,12 @@ Github action to get release name and tag.
 ### Basic
 
 ```
-- id: tag
-  uses: GuillaumeFalourd/get-release-or-tag@v1
+steps:
+   - id: tag
+     uses: GuillaumeFalourd/get-release-or-tag@v1
 
-- name: Build
-  run: echo "tag: ${{ steps.tag.outputs.tag }}"
+   - name: Build
+     run: echo "tag: ${{ steps.tag.outputs.tag }}"
 ```
 
 ### With Docker images
