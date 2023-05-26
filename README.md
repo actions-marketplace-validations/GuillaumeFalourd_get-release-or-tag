@@ -2,7 +2,7 @@
 
 [![Action test on Ubuntu](https://github.com/GuillaumeFalourd/get-release-or-tag/actions/workflows/ubuntu_action_test.yml/badge.svg)](https://github.com/GuillaumeFalourd/get-release-or-tag/actions/workflows/ubuntu_action_test.yml) [![Action test on MacOs](https://github.com/GuillaumeFalourd/get-release-or-tag/actions/workflows/macos_action_test.yml/badge.svg)](https://github.com/GuillaumeFalourd/get-release-or-tag/actions/workflows/macos_action_test.yml) [![Action test on Windows](https://github.com/GuillaumeFalourd/get-release-or-tag/actions/workflows/windows_action_test.yml/badge.svg)](https://github.com/GuillaumeFalourd/get-release-or-tag/actions/workflows/windows_action_test.yml)
 
-Github action to get a release or tag.
+Github action to get release or tag (SHA).
 
 **Supported runners**: `ubuntu`, `macos`, `windows`
 
