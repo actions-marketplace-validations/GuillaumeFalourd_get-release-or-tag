@@ -4,7 +4,7 @@
 
 Github action to get a release or tag.
 
-**Supported runners**: `ubuntu-latest`
+**Supported runners**: `ubuntu`, `macos`, `windows`
 
 ## Usage
 
