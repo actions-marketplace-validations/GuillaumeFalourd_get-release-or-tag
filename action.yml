@@ -1,6 +1,6 @@
-name: 'Get release tag or SHA'
+name: 'Get release or tag (SHA)'
 
-description: 'Gets the release tag if it exists, otherwise returns the commit id'
+description: 'Gets the release tag if it exists, otherwise returns the commit id (SHA)'
 
 outputs:
   tag:
