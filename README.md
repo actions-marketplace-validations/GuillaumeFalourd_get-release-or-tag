@@ -54,8 +54,8 @@ jobs:
 ## Action Outputs
 
 Field | How to access | Observation
------------- | ------------  | ------------- | -------------
-**tag** | `${{ steps.<step-id>.outputs.tag }}` | Contains last release tag
+------------ | ------------  | -------------
+**tag** | `${{ steps.<step-id>.outputs.tag }}` | Contains last release tag or SHA
 
 * * *
 
