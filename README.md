@@ -2,6 +2,8 @@
 
 Github action to get release name and tag.
 
+**Supported runners**: `ubuntu-latest`
+
 ## Usage
 
 ### Basic
